@@ -5,7 +5,7 @@ import com.moneysupermarket.interview.pojo.ResponseType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.client.RestTemplate;
 
-public class SellingPriceUSDService {
+public class SellingPriceUSDService  implements SellingPriceDetails{
 
     @Autowired
     RestTemplate template;
