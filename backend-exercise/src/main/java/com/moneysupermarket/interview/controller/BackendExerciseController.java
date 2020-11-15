@@ -12,6 +12,7 @@ public class BackendExerciseController {
     @Autowired
 
 
+
     @GetMapping("/exchange")
     public ResponseEntity<String> getExchangeDetails() {
         //service.getDetails();
