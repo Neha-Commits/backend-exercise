@@ -12,8 +12,8 @@ public class SellingPriceUSDService {
 
     public ResponseType getSellingPrice() throws Exception {
     try {
-        ExchangeDetailsObject exchageDetails = template.getForObject("•https://blockchain.info/ticker", ExchangeDetailsObject.class);
-
+        //ExchangeDetailsObject exchageDetails = template.getForObject("https://blockchain.info/ticker", ExchangeDetailsObject.class);
+        Object obj = template.getForObject("https://blockchain.info/ticker",Object.class);
     }catch(Exception e){
         throw new Exception();
     }
