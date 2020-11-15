@@ -1,4 +1,8 @@
-apply plugin: 'java'
+plugins {
+    id 'org.springframework.boot' version '2.3.3.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+}
 
 sourceCompatibility = 1.8
 version = '1.0'
@@ -8,6 +12,8 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
     testImplementation( 
             "org.hamcrest:hamcrest:2.2",
             "junit:junit:4.12",
